@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 // URL to fetch data for specific exoplanets from the NASA Exoplanet Archive
-const url = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+pscomppars+where+pl_name+in+('Kepler-22+b','K2-141+b','WASP-121+b','LHS-1140+b')&format=json";
+const url = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+pscomppars+where+pl_name+in+('Kepler-22+b','K2-141+b','WASP-121+b','Kepler-452+b')&format=json";
 app.use(cors());
 // Endpoint to serve exoplanet data
 app.get('/exoplanets', (req, res) => {
